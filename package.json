@@ -16,7 +16,7 @@
     "lint:markdown": "electron-markdownlint \"**/*.md\"",
     "lint:markdown-js": "electron-lint-markdown-standard --root . --ignore-path .markdownlintignore --semi \"**/*.md\"",
     "lint:markdown-links": "electron-lint-markdown-links --root . --ignore-path .markdownlintignore \"**/*.md\"",
-    "lint": "npm run lint:js && npm run lint:markdown && npm run lint:markdown-js && npm run lint:markdown-links",
+    "lint": "yarn lint:js && yarn lint:markdown && yarn lint:markdown-js && yarn lint:markdown-links",
     "lint:fix": "prettier --write . --experimental-cli && eslint --fix . --cache",
     "prepack": "yarn build",
     "test": "xvfb-maybe vitest run --project fast --project slow",
